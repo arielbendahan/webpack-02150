@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feeback Page</title>
+    <title>Star Rating</title>
 </head>
 <body>
     <h2>Please leave any feedback for our website!</h2>
     <form action="" method="post">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" required>
-        <br>
-        <br>
-        <label for="Email">Email: </label>
-        <input type="email" name="email" id="email" required>
-
-        <p>Please select your favorite Web language:</p>
-          <input type="radio" id="1" name="rating" value="1">
-          <label for="1">1</label><br>
-          <input type="radio" id="2" name="rating" value="2">
-          <label for="2">2</label><br>
-          <input type="radio" id="3" name="rating" value="3">
-          <label for="3">3</label><br>
-          <input type="radio" id="4" name="rating" value="4">
-          <label for="4">4</label><br>
-          <input type="radio" id="5" name="rating" value="5">
-          <label for="5">5</label>
+        <br><br>
         
-          <br> 
-
-        <br>
-        <br>
-        <label for="comments">Comments (If any)</label>
-        <input type="text" name="comments" id="comments">
-
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="review">Rate your visit:</label><br><br>
+        <div class="star-rating">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5">★</label>
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4">★</label>
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3">★</label>
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2">★</label>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1">★</label>
+        </div>
+        <br><br>
+        <label for="comments">Comments (If any): </label>
+        <textarea name="comments" id="comments"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
