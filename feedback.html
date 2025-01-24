@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Rating</title>
+    <script src="./feedback.js"></script>
 </head>
 <body>
     <h2>Please leave any feedback for our website!</h2>
-    <form action="" method="post">
+    <form id="form" method="get">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" required>
         <br><br>
@@ -32,7 +33,7 @@
         <label for="comments">Comments (If any): </label>
         <textarea name="comments" id="comments"></textarea>
         <br><br>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="handleSubmit()">Submit</button>
     </form>
 </body>
 </html>
